@@ -70,7 +70,43 @@
 </div>
 </section>
 <!-- Add money -->
- <section id="cashout" class="w-11/12 mx-auto py-5">
+<section id="add-money" class="w-11/12 mx-auto py-5">
+ <h2 class="text-3xl font-bold mb-7">Add Money</h2>
+<div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+<label class="label text-neutral font-bold">Select Bank</label>
+<select id="add-money-bank" class="select w-full bg-base-200 rounded-full ">
+  <option disabled selected>Pick a Bank</option>
+  <option value="Janata BANK">Janata BANK</option>
+  <option value="Islami BANK">Islami BANK</option>
+  <option value="City BANK">City BANK</option>
+  <option value="Shimul's BANK">Shimul's BANK</option>
+  <option value="Tausin's BANK">Tausin's BANK</option>
+  <option value="Sami's BANK">Sami's BANK</option>
+  <option value="Tarif's BANK">Tarif's BANK</option>
+  <option value="Rohan's BANK">Rohan's BANK</option>
+</select>
+<br>
+
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="add-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Bank Account Number(20 digits)" />
+         <br>
+          <label class="label text-neutral font-bold">Amount to Add</label>
+          <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Amount Of Money" />
+         <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input id="add-money-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Please Enter Your Pin" />
+          <div><a class="link link-hover">Forgot Pin?</a></div>
+          <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+</section>
+
+<!-- CashOut -->
+ <section id="cashout" class="w-11/12 mx-auto py-5 ">
     <h2 class="text-3xl font-bold mb-7">CashOut</h2>
     <div class="card bg-base-100 w-full shadow rounded-2xl">
       <div class="card-body">
@@ -89,6 +125,82 @@
       </div>
     </div>
  </section>
+ <!-- Transfer -->
+  <section id="transfer-money" class="w-11/12 mx-auto py-5">
+ <h2 class="text-3xl font-bold mb-7">Transfer Money</h2>
+<div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+<label class="label text-neutral font-bold">Select Bank</label>
+<select id="transfer-money-bank" class="select w-full bg-base-200 rounded-full ">
+  <option disabled selected>Pick a Bank</option>
+  <option value="Janata BANK">Janata BANK</option>
+  <option value="Islami BANK">Islami BANK</option>
+  <option value="City BANK">City BANK</option>
+  <option value="Shimul's BANK">Shimul's BANK</option>
+  <option value="Tausin's BANK">Tausin's BANK</option>
+  <option value="Sami's BANK">Sami's BANK</option>
+  <option value="Tarif's BANK">Tarif's BANK</option>
+  <option value="Rohan's BANK">Rohan's BANK</option>
+</select>
+<br>
+
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="transfer-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Bank Account Number(20 digits)" />
+         <br>
+          <label class="label text-neutral font-bold">Amount to Transfer</label>
+          <input id="transfer-money-amount" type="number" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Amount Of Money" />
+         <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input id="transfer-money-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Please Enter Your Pin" />
+          <div><a class="link link-hover">Forgot Pin?</a></div>
+          <button id="transfer-money-btn" class="btn btn-primary mt-4 rounded-full">Transfer Money</button>
+        </fieldset>
+      </div>
+    </div>
+</section>
+<!-- Pay Bill -->
+<section id="pay-money" class="w-11/12 mx-auto py-5">
+ <h2 class="text-3xl font-bold mb-7">Pay Money</h2>
+<div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+<label class="label text-neutral font-bold">Select Bank</label>
+<select id="pay-money-bank" class="select w-full bg-base-200 rounded-full ">
+  <option disabled selected>Pick a Bank</option>
+  <option value="Janata BANK">Janata BANK</option>
+  <option value="Islami BANK">Islami BANK</option>
+  <option value="City BANK">City BANK</option>
+  <option value="Shimul's BANK">Shimul's BANK</option>
+  <option value="Tausin's BANK">Tausin's BANK</option>
+  <option value="Sami's BANK">Sami's BANK</option>
+  <option value="Tarif's BANK">Tarif's BANK</option>
+  <option value="Rohan's BANK">Rohan's BANK</option>
+</select>
+<br>
+
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="pay-money-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Bank Account Number(20 digits)" />
+         <br>
+          <label class="label text-neutral font-bold">Amount to Pay</label>
+          <input id="pay-money-amount" type="number" class="input rounded-full bg-base-200 w-full " placeholder="Please Enter Amount Of Money" />
+         <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input id="pay-money-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Please Enter Your Pin" />
+          <div><a class="link link-hover">Forgot Pin?</a></div>
+          <button id="pay-money-btn" class="btn btn-primary mt-4 rounded-full">Pay Money</button>
+        </fieldset>
+      </div>
+    </div>
+</section>
+
+
+<script src="payoo-resources/script/pay.js"></script>
+<script src="payoo-resources/script/transfer.js"></script>
+ <script src="payoo-resources/script/machine.js"></script>
  <script src="payoo-resources/script/cashout.js"></script>
+ <script src="payoo-resources/script/addmoney.js"></script>
 </body>
 </html>

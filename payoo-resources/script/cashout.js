@@ -16,6 +16,7 @@ document.getElementById('cashout-btn').addEventListener('click', function() {
         alert('Insufficient balance for this cashout amount.');
         return;
     }
+    
     // calculate the new balance and update the UI
 
     const newBalance=currentBalance-cashoutAmount;
