@@ -23,6 +23,8 @@ function showOnly(id){
     const transfer=document.getElementById('transfer-money');
     const pay=document.getElementById('pay-money');
     const history=document.getElementById('history');
+    const bonus=document.getElementById('bonus');
+    bonus.style.display='none';
     history.style.display='none';
     addmoney.style.display='none';
     cashout.style.display='none';
