@@ -28,5 +28,19 @@ if(pin!=='1234'){
 } else {
     alert(`Successfully transferred $${amount} from your balance to bank account ${accno}.`);
     setBalance(newBalance);
+    // history container ke anbo
+    const history=document.getElementById('history-container');
+    // new div create
+    const newHistory=document.createElement('div');
+    // inside new div add innerHtml
+    newHistory.innerHTML=`
+    <div class="transation-card p-5 bg-base-100 rounded-lg shadow mb-3">
+       <p class="text-lg font-semibold">Transferred $${amount} to bank account ${accno}</p>
+     
+
+    </div>
+    `
+    // new div append to new div
+    history.appendChild(newHistory);
 } 
 });
