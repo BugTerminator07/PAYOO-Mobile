@@ -12,7 +12,7 @@ document.getElementById('login-btn').addEventListener("click",
         if(contactNumber=="01730633804" && pin=="1234"){
          // if true:::alert>homepage
          alert('Login Successful');
-         window.location.assign("/home.html");
+         window.location.assign("https://bugterminator07.github.io/PAYOO-Mobile/home.html");
         }
         // if false:::alert>return
         else{
